@@ -1,16 +1,16 @@
-import "./globals.css";
-import { Providers } from "./Providers";
+import './globals.css';
+import { Providers } from './Providers';
 
 export default function RootLayout({
-  children,
+    children,
 }: {
-  children: React.ReactNode;
+    children: React.ReactNode;
 }) {
-  return (
-    <html lang="en" className="dark" data-theme="silk">
-      <body>
-        <Providers>{children}</Providers>
-      </body>
-    </html>
-  );
+    return (
+        <html lang="en" className="dark" data-theme="silk">
+            <body>
+                <Providers>{children}</Providers>
+            </body>
+        </html>
+    );
 }

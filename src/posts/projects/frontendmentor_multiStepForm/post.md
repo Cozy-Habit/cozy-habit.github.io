@@ -1,9 +1,10 @@
 ---
 title: FrontendMentor Challenge - Multi-Step Form
 description: This is the description for this FrontendMentor project
+websiteLink: https://multi-step-form-eight-omega-35.vercel.app/userinfo
+repoLink: https://github.com/Cozy-Habit/multi-step-form
 tags: TypeScript, Next.js, React-Hook-Form, Zustand
 date: 7th June, 2025
-thumbnail: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz-Ib4uCztJBiBwaDiEsD4dKzUOlkgP_YRvQ&s
 ---
 
 # FrontendMentor Challenge - Multi-Step Form

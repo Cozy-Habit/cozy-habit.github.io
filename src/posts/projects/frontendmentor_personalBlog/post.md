@@ -3,7 +3,8 @@ title: FrontendMentor Challenge - Personal Blog
 description: This is the description for this FrontendMentor project
 tags: TypeScript, Next.js, Tailwind, HeroUI
 date: 7th June, 2025
-thumbnail: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz-Ib4uCztJBiBwaDiEsD4dKzUOlkgP_YRvQ&s
+websiteLink: https://cozy-habit.github.io/
+repoLink: https://github.com/Cozy-Habit/cozy-habit.github.io
 ---
 
 # FrontendMentor Challenge - Personal Blog

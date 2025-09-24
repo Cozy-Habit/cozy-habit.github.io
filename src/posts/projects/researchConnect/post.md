@@ -1,10 +1,11 @@
 ---
-title: University Projects Blackboard
+title: Research Connect - University Projects Blackboard
 descr: This is the description for this uni project
 tags: TypeScript, Next.js, SCSS, Supabase, React-Hook-Form, Zustand
 date: 7th June, 2025
-thumbnail: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz-Ib4uCztJBiBwaDiEsD4dKzUOlkgP_YRvQ&s
 ---
+
+Disclaimer: Unfortunately, this webapp can't be tested out live, as the database server is automatically shut down to save resources.
 
 # Research Connect - University Projects Blackboard
 

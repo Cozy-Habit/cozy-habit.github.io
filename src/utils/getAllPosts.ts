@@ -2,7 +2,7 @@ import fs from 'fs';
 import GrayMatter from 'gray-matter';
 import path from 'path';
 
-type PostData = {
+export type PostData = {
     dir: string;
     metadata: GrayMatter.GrayMatterFile<string>;
     content: string;
@@ -22,8 +22,8 @@ const projectsDirectory = path.join(process.cwd(), 'src/posts/projects');
 
 export function getAllPosts(): { articles: PostData; projects: PostData } {
     try {
-        const articles = getPosts(articlesDirectory);
-        const projects = getPosts(projectsDirectory);
+        const articles = getArticles();
+        const projects = getProjects();
 
         return {
             articles,
@@ -35,7 +35,25 @@ export function getAllPosts(): { articles: PostData; projects: PostData } {
     return { articles: [], projects: [] };
 }
 
-export function getPosts(folderPath: string): PostData {
+export function getArticles(): PostData {
+    try{
+        return getPostsByDir(articlesDirectory);
+    }catch (e) {
+        console.error(e); // or throw, or return a default object
+    }
+    return [];
+}
+
+export function getProjects(): PostData {
+    try{
+        return getPostsByDir(projectsDirectory);
+    }catch (e) {
+        console.error(e); // or throw, or return a default object
+    }
+    return [];
+}
+
+export function getPostsByDir(folderPath: string): PostData {
     const dirs = fs.readdirSync(folderPath);
 
     //I could use reduce here instead
